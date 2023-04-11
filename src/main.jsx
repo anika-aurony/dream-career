@@ -11,6 +11,7 @@ import Main1 from './components/Layout/Main1';
 import Statistics from './components/Statistics/Statistics';
 import AppliedJob from './components/AppliedJob/AppliedJob';
 import Blog from './components/Blog/Blog';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter([
   {

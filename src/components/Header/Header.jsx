@@ -1,18 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'
+import { Button } from 'react-bootstrap';
+
 
 const Header = () => {
     return (
         <div className='header'>
-            <h2>Dream Job</h2>
+            <h3>Dream Career</h3>
             <nav>
                 <Link to="/">Home</Link>
                 <Link to="/statistics">Statistics</Link>
                 <Link to="/appliedJob">Applied Job</Link>
                 <Link to="/blog">Blog</Link>
             </nav>
-            <button>Start Applying</button>
+            <Button variant="primary">Start Applying</Button>
+            
         </div>
 
     );

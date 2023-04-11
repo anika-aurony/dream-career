@@ -1,0 +1,28 @@
+img {
+    height: 400px;
+    width: 100%;
+}
+
+.banner-text {
+    margin: auto;
+    margin-left: 100px;
+}
+
+.banner-text h1{
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.color {
+    color: rgba(126, 144, 254, 1);
+    
+}
+
+@media only screen and (max-width:688px) {
+    .banner-text{
+        width: 90%;
+        margin-left: auto;
+    }
+
+}
