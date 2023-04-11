@@ -1,0 +1,26 @@
+[
+    {
+      "id": "643569237860f7718e67e951",
+      "name": "Marketing & Sales",
+      "logoImg": "https://png.pngtree.com/png-vector/20190929/ourmid/pngtree-bulb-money-line-icon-vector-png-image_1769352.jpg",
+      "jobAvailable": 253
+    },
+    {
+      "id": "643569231f668313dd0727b8",
+      "name": "Engineering Job",
+      "logoImg": "https://png.pngtree.com/element_our/20190528/ourmid/pngtree-flat-chip-image_1144708.jpg",
+      "jobAvailable": 313
+    },
+    {
+      "id": "643569233b115b96e7bb91aa",
+      "name": "Accounts and Finance",
+      "logoImg": "https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-calculator-icon-png-image_321046.jpg",
+      "jobAvailable": 449
+    },
+    {
+      "id": "64356923536d20e7ed0cc241",
+      "name": "Creative Design",
+      "logoImg": "https://png.pngtree.com/png-vector/20191130/ourmid/pngtree-idea-vector-icon-png-image_2058327.jpg",
+      "jobAvailable": 342
+    }
+  ]

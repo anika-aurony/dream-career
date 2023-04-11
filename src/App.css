@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+@media only screen and (max-width:688px) {
+  #root {
+    margin: 10px 20px;
+  }
+
+}
