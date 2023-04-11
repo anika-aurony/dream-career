@@ -1,0 +1,28 @@
+.name {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #757575;
+}
+
+.jobStatus{
+    border: 1px solid rgba(126, 144, 254, 1) ;
+    color: rgba(126, 144, 254, 1);
+    border-radius: 4px;
+    padding: 4px 5px 4px 6px;
+    margin-right: 2px;
+}
+.jobStatus:hover{
+    background-color: rgb(14, 26, 99) ;
+}
+.jobInfo{
+    color: rgba(117, 117, 117, 1);
+}
+@media only screen and (max-width:688px) {
+    .card-height{
+        height: auto;
+    }
+        
+}
