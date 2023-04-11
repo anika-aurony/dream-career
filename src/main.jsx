@@ -12,6 +12,7 @@ import Statistics from './components/Statistics/Statistics';
 import AppliedJob from './components/AppliedJob/AppliedJob';
 import Blog from './components/Blog/Blog';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import JobDetails from './components/JobDetails/JobDetails';
 
 const router = createBrowserRouter([
   {
@@ -21,8 +22,13 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('categoryData.json'),
+        // loader: () => fetch('categoryData.json'),
         
+      },
+      {
+        path: 'job/:jobId',
+        element:<JobDetails></JobDetails>,
+        loader: ({params}) => fetch('jobData.json'),
       },
       {
         path: '/statistics',

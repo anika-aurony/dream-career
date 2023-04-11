@@ -20,6 +20,10 @@
 .jobInfo{
     color: rgba(117, 117, 117, 1);
 }
+
+.link{
+    text-decoration: none;
+}
 @media only screen and (max-width:688px) {
     .card-height{
         height: auto;

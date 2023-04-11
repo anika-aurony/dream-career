@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import './Category.css'
 
 const Category = ({ category }) => {
-    console.log(category)
+    // console.log(category)
     const { name, logoImg, jobAvailable } = category
     return (
         <Card style={{ width: '17rem', height: "180px" }} className='card1 mb-3'>

@@ -5,9 +5,17 @@ import Card from 'react-bootstrap/Card';
 import pic1 from '../../assets/assets/Icons/Frame-4.png'
 import pic2 from '../../assets/assets/Icons/Frame.png'
 import './Jobs.css'
+import { Link, useNavigate } from 'react-router-dom';
 
 const Jobs = ({ job }) => {
-    const { companyName, companyLogo, jobTitle, location, jobStatus, jobLocation, salary } = job
+    const { companyName, companyLogo, jobTitle, location, jobStatus, jobLocation, salary, _id } = job;
+    // const navigate = useNavigate()
+    // const handleDetails = () => {
+    //     navigate(`/job/${_id}`)
+    // }
+
+
+
     return (
         <div>
             <Col className='card-height'>
@@ -25,7 +33,8 @@ const Jobs = ({ job }) => {
                             <img src={pic2} alt="" srcset="" style={{ height: '18px', width: '20px' }}/>
                             <small>Salary: {salary}</small></p>
                     </Card.Text>
-                    <Button variant="primary">View Details</Button>
+                    <Link to={`/job/${_id}`} className='link'><Button variant="primary" >View Details  </Button></Link>
+                    
                 </Card.Body>
             </Card>
             </Col>
