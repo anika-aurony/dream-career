@@ -6,6 +6,8 @@ import pic2 from '../../assets/assets/Icons/Frame.png'
 import pic3 from '../../assets/assets/Icons/Frame-1.png'
 import pic4 from '../../assets/assets/Icons/Frame-2.png'
 import pic5 from '../../assets/assets/Icons/Frame-3.png'
+import pic from "../../assets/assets/All Images/Vector-1.png"
+import banner from "../../assets/assets/All Images/Vector.png"
 import './JobDetails.css'
 import { Button } from 'react-bootstrap';
 
@@ -52,7 +54,12 @@ const JobDetails = () => {
 
     return (
         <div>
-            <h2 className='text-center mt-4 fw-semibold'>Job Details</h2>
+
+            <div className='d-flex' style={{ height: '300px', position: 'relative'  }}>
+                <img style={{ height: '150px', width: '200px', position: 'absolute', top: '150px' }} src={banner} alt=""  />
+                <h1 style={{position: 'absolute', left: '400px',  top: '22%'}} className='text-center my-5'>Job Details</h1>
+                <img style={{ height: '200px', width: '220px', position: 'absolute', top: '-60px',right: '22px', }} src={pic} alt=""  />
+            </div>
 
             <div className='container '>
                 <div className='detail-container m-5' >

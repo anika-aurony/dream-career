@@ -4,9 +4,9 @@ import Category from '../Category/Category';
 import { useLoaderData } from 'react-router-dom';
 import Jobs from '../Jobs/Jobs';
 import { Button, Row } from 'react-bootstrap';
+import ShowJob from '../ShowJob/ShowJob';
 
 const Home = () => {
-    // const categories = useLoaderData();
     const [categories, setCategories] = useState([]);
     useEffect(() => {
         fetch('categoryData.json')
@@ -21,12 +21,13 @@ const Home = () => {
             .then(data => setJobs(data))
     }, [])
 
-    const [display, setDisplay] = useState()
+    const [display, setDisplay] = useState(true)
     let sortedJobs = jobs.slice(0, 4);
+    let s = true;
 
-    const handleShowAllJob = ()=>{
-            sortedJobs = jobs;
-            return sortedJobs
+    const handleShowAllJob = () => {
+        
+        return setDisplay(false)
     }
 
     // console.log(jobs)
@@ -54,17 +55,16 @@ const Home = () => {
 
                 <p className='text-center px-5 mb-4'><small>Find the job opportunities with all the informations you need. Its your future.</small></p>
                 <div>
-                    <Row xs={1} md={2} className="g-4">
-                        {
-                            sortedJobs.map(job => <Jobs
-                                key={job.id}
-                                job={job}
-                            ></Jobs>)
-                        }
-                    </Row>
+                    {/* <ShowJob sortedJobs={sortedJobs}></ShowJob> */}
+                    {
+                        display ? <ShowJob sortedJobs={sortedJobs}></ShowJob> : <ShowJob sortedJobs={jobs}></ShowJob>
+                    }
                 </div>
                 <div className='text-center my-3'>
-                <Button  variant="primary" onClick={handleShowAllJob}>See All Jobs</Button>
+                    {
+                        display ?  <Button variant="primary" onClick={handleShowAllJob}>See All Jobs</Button> : ''
+                    }
+                    
                 </div>
 
             </div>
