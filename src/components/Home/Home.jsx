@@ -21,7 +21,13 @@ const Home = () => {
             .then(data => setJobs(data))
     }, [])
 
-    const sortedJobs = jobs.slice(0, 4)
+    const [display, setDisplay] = useState()
+    let sortedJobs = jobs.slice(0, 4);
+
+    const handleShowAllJob = ()=>{
+            sortedJobs = jobs;
+            return sortedJobs
+    }
 
     // console.log(jobs)
     return (
@@ -58,7 +64,7 @@ const Home = () => {
                     </Row>
                 </div>
                 <div className='text-center my-3'>
-                <Button  variant="primary">See All Jobs</Button>
+                <Button  variant="primary" onClick={handleShowAllJob}>See All Jobs</Button>
                 </div>
 
             </div>

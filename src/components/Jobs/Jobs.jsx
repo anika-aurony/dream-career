@@ -9,10 +9,6 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const Jobs = ({ job }) => {
     const { companyName, companyLogo, jobTitle, location, jobStatus, jobLocation, salary, _id } = job;
-    // const navigate = useNavigate()
-    // const handleDetails = () => {
-    //     navigate(`/job/${_id}`)
-    // }
 
 
 

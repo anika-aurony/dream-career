@@ -13,6 +13,7 @@ import AppliedJob from './components/AppliedJob/AppliedJob';
 import Blog from './components/Blog/Blog';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import JobDetails from './components/JobDetails/JobDetails';
+import Page404 from './components/Page404/Page404';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: '/blog',
         element: <Blog></Blog>
+      },
+      {
+        path: '*',
+        element: <Page404></Page404>
       }
     ]
   },
