@@ -1,0 +1,32 @@
+.applied-job {
+    /* width: 571px; */
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    padding: 8px 25px 8px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.applied-job .product-title {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+}
+
+.applied-detail {
+    flex-grow: 1;
+}
+
+/* .applied-detail img{
+    margin-right: 0px;
+} */
+
+.image {
+    width: 180px;
+    height: 150px;
+    border-radius: 6px;
+    margin-right: 10%;
+    margin-left: 10px;
+}

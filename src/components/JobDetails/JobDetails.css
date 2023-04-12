@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+
+
+}
+
+.detail-container p {
+    font-family: 'Manrope';
+    font-style: normal;
+
+}
+
+.cart-container {
+    background-color: rgba(152, 115, 255, 0.1);
+    padding: 8%;
+    border-radius: 10px;
+}
+
+.cart-container p {
+
+    font-family: 'Manrope';
+    font-style: normal;
+
+    font-size: 15px;
+}
